@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <title>EXERCÍCIO 12</title>
+    </head>
+    <body>
+        <div class="jumbotron">
+            <div class="container">
+                <h1 class="page-header">EXERCÍCIO 12</h1>
+                <p>Fazer um programa para ler os três coeficientes de uma equação do
+                    segundo grau. Usando a fórmula de Bhaskara, calcular e mostrar os valores
+                    das raízes x1 e x2 da equação com quatro casas decimais, conforme
+                    exemplos. Se a equação não possuir raízes reais, mostrar uma mensagem.</p>
+                <p>Exemplos: <br>
+                    Coeficiente a:<span style="color: red;">1</span><br>
+                    Coeficiente b:<span style="color: red;">0</span><br>
+                    Coeficiente c:<span style="color: red;">-9</span><br>
+                    X1 = 3.0000 <br>
+                    X2 = -3.0000</p>
+            </div>
+        </div>
+        <div class="container formulario">
+            <form>
+                <div class="form-group">
+                    <div class="input-group input-group-md">
+                        <span class="input-group-addon">Coeficiente a:</span>
+                        <input id="a" type="number" class="form-control" aria-describedby="sizing-addon1">
+                        <span class="input-group-addon"></span> 
+                    </div>                  
+                </div>
+                <div class="form-group">
+                    <div class="input-group input-group-md">
+                        <span class="input-group-addon">Coeficiente b:</span>
+                        <input id="b" type="number" class="form-control" aria-describedby="sizing-addon1">
+                        <span class="input-group-addon"></span> 
+                    </div>                  
+                </div>
+                <div class="form-group">
+                    <div class="input-group input-group-md">
+                        <span class="input-group-addon">Coeficiente c:</span>
+                        <input id="c" type="number" class="form-control" aria-describedby="sizing-addon1">
+                        <span class="input-group-addon"></span> 
+                    </div>                  
+                </div>                                                
+                <button type="button" class="btn btn-info" onclick="calcular()">Calcular</button>
+            </form>
+        </div>
+        <br>
+        <div class="container formulario" id="form2">
+            <form>
+                <div class="form-group">
+                    <div class="input-group input-group-md">
+                        <span class="input-group-addon">X1 =</span>                
+                        <p class="form-control" id="x1"></p>
+                        <span class="input-group-addon"></span>                    
+                    </div>            
+                </div>
+                <div class="form-group">
+                    <div class="input-group input-group-md">
+                        <span class="input-group-addon">X2 =</span>                
+                        <p class="form-control" id="x2"></p>
+                        <span class="input-group-addon"></span>                    
+                    </div>            
+                </div>                    
+            </form>      
+        </div>
+        <div class="jumbotron">
+            <div class="container">
+                <p>Espero que  tenha gostado! Feito por Aline Almeida ❤️</p>             
+            </div>
+        </div>
+        <script src="./script.js"></script>     
+    </body>
+</html>
